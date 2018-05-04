@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>医院信息填写</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<form action="CarServlet" method="post" name="f" class="">
+    <input type="hidden" name="action" value="save">
+    <input type="hidden" name="id" value="${car.id}">
+    <div class="form-group">
+        <label class="col-form-label" >医院名称:</label>
+        <input id="name" name="mc" placeholder="医院名称"
+               class="form-control" type="text" value="">
+    </div>
+
+    <div class="form-group">
+        <label class="col-form-label" >通讯地址:</label>
+        <input id="price" name="dz" placeholder="通讯地址" class="form-control"
+                step="0.01" value="">
+    </div>
+
+    <div class="form-group">
+        <label class="col-form-label" >邮政编码:</label>
+        <input id="createDate" name="yzbm" placeholder="邮政编码"
+               class="form-control" value="">
+    </div>
+
+    <button type="submit" class="btn btn-success btn-block">保存</button>
+    <button type="reset" class="btn btn-warning btn-block">重置</button>
+</form>
+
+</body>
+</html>
+<!--id     VARCHAR2(64) not null, &#45;&#45;医院ID-->
+<!--mc     VARCHAR2(128) not null,&#45;&#45;医院名称-->
+<!--dz     VARCHAR2(256),&#45;&#45;通讯地址-->
+<!--yzbm   VARCHAR2(32),&#45;&#45;邮政编码-->
+<!--dq     VARCHAR2(128),&#45;&#45;所属地区-->
+<!--jb     VARCHAR2(32),&#45;&#45;医院级别-->
+<!--cws    VARCHAR2(64),&#45;&#45;床位数-->
+<!--fyljg  CHAR(1),&#45;&#45;是否为非营利性机构-->
+<!--dh     VARCHAR2(64),&#45;&#45;院办电话-->
+<!--yjkdh  VARCHAR2(64),&#45;&#45;药剂科电话-->
+<!--lb     VARCHAR2(64),&#45;&#45;医院类型-->
+<!--ypsr   VARCHAR2(32),&#45;&#45;上年度药品收入-->
+<!--ywsr   VARCHAR2(32),&#45;&#45;上年度业务收入-->
+<!--cz     VARCHAR2(64),&#45;&#45;院办传真-->
